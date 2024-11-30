@@ -29,17 +29,22 @@ Command Line Interface
 The package includes a command line interface for testing purposes:
 
 ```sh
-# Generate a Martin1 encoded image:
-$ sstv-cli -m1 -sample-rate=41000 input.png output.wav
+# Generate a Robot36 encoded image:
+$ sstv-cli -r36 -sample-rate=41000 test2.png output.wav
 
 # Generate a Scottie1 encoded image:
-$ sstv-cli -s1 -sample-rate=41000 input.png output.wav
+$ sstv-cli -s1 -sample-rate=41000 test2.png output.wav
 
 # Display all modes:
 $ sstv-cli -help
 ```
 
-You may install the CLI command via `go get -u github.com/dotStart/go-sstv/...`
+Sample decoded
+-----
+
+To decode, you can use the Android app Robot36 or QSSTV on Linux. The following is a sample image of a Robot36 encoded image decoded using the Android app Robot36:
+
+![Sample](assets/sample_decoded.jpeg))
 
 License
 -------
